@@ -1,18 +1,25 @@
-import Header from "./components/Header";
+import Features from './components/Features';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import TrustBar from './components/TrustBar';
+
 
 function App() {
   return (
-    <>
-      <Header />
-
-      <main>
-        <section className="flex items-center justify-center h-screen bg-gray-50">
-          <h1 className="text-3xl font-bold text-gray-800">
-            Hero Section will go here
-          </h1>
-        </section>
-      </main>
-    </>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+      <TrustBar />
+      <Features />
+      {/* 
+      <Advantage />
+      <Pricing />
+      <Testimonials />
+      <FAQ />
+      <Blog />
+      <CTA />
+      <Footer /> */}
+    </div>
   );
 }
 
