@@ -89,7 +89,6 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Overall rating */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center px-6 py-3 bg-white rounded-full shadow-lg">
             <div className="flex mr-4">

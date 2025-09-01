@@ -1,30 +1,36 @@
-import { Calendar, ArrowRight, Clock } from 'lucide-react';
+import { Calendar, ArrowRight, Clock } from "lucide-react";
 
 const Blog = () => {
   const posts = [
     {
-      title: 'Smart Business Capital Trading in AI',
-      excerpt: 'Discover how artificial intelligence is revolutionizing business capital trading and creating new opportunities for growth.',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      date: 'March 15, 2024',
-      readTime: '5 min read',
-      category: 'AI & Business',
+      title: "Smart Business Capital Trading in AI",
+      excerpt:
+        "Discover how artificial intelligence is revolutionizing business capital trading and creating new opportunities for growth.",
+      image:
+        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      date: "March 15, 2024",
+      readTime: "5 min read",
+      category: "AI & Business",
     },
     {
-      title: 'Why Financial Security Makes Investments',
-      excerpt: 'Learn the fundamental principles of financial security and how they form the foundation for successful investment strategies.',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      date: 'March 12, 2024',
-      readTime: '7 min read',
-      category: 'Investment',
+      title: "Why Financial Security Makes Investments",
+      excerpt:
+        "Learn the fundamental principles of financial security and how they form the foundation for successful investment strategies.",
+      image:
+        "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
+      date: "March 12, 2024",
+      readTime: "7 min read",
+      category: "Investment",
     },
     {
-      title: 'Ultimate Guide to Business Automation',
-      excerpt: 'A comprehensive guide to implementing business automation that drives efficiency and reduces operational costs.',
-      image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
-      date: 'March 10, 2024',
-      readTime: '10 min read',
-      category: 'Automation',
+      title: "Ultimate Guide to Business Automation",
+      excerpt:
+        "A comprehensive guide to implementing business automation that drives efficiency and reduces operational costs.",
+      image:
+        "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800",
+      date: "March 10, 2024",
+      readTime: "10 min read",
+      category: "Automation",
     },
   ];
 
@@ -36,7 +42,8 @@ const Blog = () => {
             Latest Insights from Our Blog
           </h2>
           <p className="max-w-3xl mx-auto text-xl text-gray-600">
-            Stay updated with the latest trends, tips, and insights in web development, AI, and business automation.
+            Stay updated with the latest trends, tips, and insights in web
+            development, AI, and business automation.
           </p>
         </div>
 

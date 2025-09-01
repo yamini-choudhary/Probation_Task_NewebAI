@@ -1,49 +1,38 @@
-import { Zap, Twitter, Linkedin, Github, Youtube, Mail } from 'lucide-react';
+import { Zap, Twitter, Linkedin, Github, Youtube, Mail } from "lucide-react";
 
 const Footer = () => {
   const footerSections = [
     {
-      title: 'Products',
+      title: "Products",
       links: [
-        'AI Code Generation',
-        'Website Builder',
-        'Template Library',
-        'Analytics Dashboard',
-        'API Access',
-        'Enterprise Solutions',
+        "AI Code Generation",
+        "Website Builder",
+        "Template Library",
+        "Analytics Dashboard",
+        "API Access",
+        "Enterprise Solutions",
       ],
     },
     {
-      title: 'Developers',
+      title: "Developers",
       links: [
-        'Documentation',
-        'API Reference',
-        'SDKs & Libraries',
-        'Webhooks',
-        'Status Page',
-        'Changelog',
+        "Documentation",
+        "API Reference",
+        "SDKs & Libraries",
+        "Webhooks",
+        "Status Page",
+        "Changelog",
       ],
     },
     {
-      title: 'Resources',
+      title: "Resources",
       links: [
-        'About Us',
-        'Blog',
-        'Case Studies',
-        'Help Center',
-        'Community',
-        'Partners',
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        'Careers',
-        'Press Kit',
-        'Contact Us',
-        'Terms of Service',
-        'Privacy Policy',
-        'Security',
+        "About Us",
+        "Blog",
+        "Case Studies",
+        "Help Center",
+        "Community",
+        "Partners",
       ],
     },
   ];
@@ -63,22 +52,36 @@ const Footer = () => {
               </div>
               <span className="text-2xl font-bold">neweb.ai</span>
             </div>
-            
+
             <p className="mb-6 leading-relaxed text-gray-400">
-              Revolutionize your web development process with AI-powered tools that help you build faster, smarter websites. Join thousands of developers worldwide.
+              Revolutionize your web development process with AI-powered tools
+              that help you build faster, smarter websites. Join thousands of
+              developers worldwide.
             </p>
-            
+
             <div className="flex space-x-4">
-              <a href="#" className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600">
+              <a
+                href="#"
+                className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600"
+              >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600">
+              <a
+                href="#"
+                className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600">
+              <a
+                href="#"
+                className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600"
+              >
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600">
+              <a
+                href="#"
+                className="flex items-center justify-center w-10 h-10 transition-colors duration-200 bg-gray-800 rounded-lg hover:bg-blue-600"
+              >
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -109,7 +112,9 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="mb-6 lg:mb-0">
               <h3 className="mb-2 text-xl font-semibold">Stay Updated</h3>
-              <p className="text-gray-400">Get the latest updates and insights delivered to your inbox.</p>
+              <p className="text-gray-400">
+                Get the latest updates and insights delivered to your inbox.
+              </p>
             </div>
             <div className="flex w-full lg:w-auto">
               <input
@@ -131,9 +136,24 @@ const Footer = () => {
               © 2025 neweb.ai. All rights reserved.
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="transition-colors duration-200 hover:text-white">Privacy Policy</a>
-              <a href="#" className="transition-colors duration-200 hover:text-white">Terms of Service</a>
-              <a href="#" className="transition-colors duration-200 hover:text-white">Cookie Settings</a>
+              <a
+                href="#"
+                className="transition-colors duration-200 hover:text-white"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="transition-colors duration-200 hover:text-white"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="transition-colors duration-200 hover:text-white"
+              >
+                Cookie Settings
+              </a>
             </div>
           </div>
         </div>

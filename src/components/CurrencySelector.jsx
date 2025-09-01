@@ -1,10 +1,10 @@
-import { Globe, ChevronDown } from 'lucide-react';
-import { pricingConfig } from '../lib/pricing.config';
+import { Globe, ChevronDown } from "lucide-react";
+import { pricingConfig } from "../lib/pricing.config";
 
 const CurrencySelector = ({
   currentCurrency,
   onCurrencyChange,
-  className = '',
+  className = "",
 }) => {
   const currencies = Object.keys(pricingConfig);
 
@@ -14,7 +14,7 @@ const CurrencySelector = ({
         <select
           value={currentCurrency}
           onChange={(e) => onCurrencyChange(e.target.value)}
-          className="py-3 pl-10 pr-10 text-sm font-medium text-gray-700 transition-all duration-200 bg-white border border-gray-300 rounded-lg shadow-sm appearance-none cursor-pointer hover:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:shadow-md"
+          className="py-3 pl-10 pr-10 text-sm font-medium text-gray-700 transition-all duration-200 bg-white border border-gray-300 rounded-lg shadow-sm appearance-none cursor-pointer hover:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent hover:shadow-md focus:outline-none"
         >
           {currencies.map((curr) => (
             <option key={curr} value={curr}>

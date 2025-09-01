@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { ArrowRight, Play, CheckCircle } from "lucide-react";
+import { useGeoCurrency } from "../hooks/useGeoCurrency";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
+  const { pricing } = useGeoCurrency();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,6 +45,18 @@ const Hero = () => {
                 real-time code generation, and intelligent design suggestions.
                 Build websites faster than ever before.
               </p>
+              <div className="p-4 text-left border border-blue-200 rounded-lg bg-blue-50">
+                <p className="mb-2 font-medium text-blue-800">
+                  🚀 Special Launch Offer
+                </p>
+                <p className="text-blue-700">
+                  Start building with AI today from just{" "}
+                  <span className="font-bold">
+                    {pricing.symbol}
+                    {pricing.plans.starter}/month
+                  </span>
+                </p>
+              </div>
             </div>
 
             {/* Email Signup Form */}

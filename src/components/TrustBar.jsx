@@ -1,13 +1,11 @@
-import React from 'react';
-
 const TrustBar = () => {
   const companies = [
-    'Ollo',
-    'Kintsugi', 
-    'Radius',
-    'Hexsmith',
-    'Layers',
-    'Sonorous',
+    "Ollo",
+    "Kintsugi",
+    "Radius",
+    "Hexsmith",
+    "Layers",
+    "Sonorous",
   ];
 
   return (

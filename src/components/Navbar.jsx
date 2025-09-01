@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Zap } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,15 +31,12 @@ const Navbar = () => {
     >
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="relative">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <div className="absolute w-3 h-3 bg-green-400 rounded-full -top-1 -right-1 animate-pulse"></div>
-            </div>
-            <span className="text-xl font-bold text-gray-900">neweb.ai</span>
+          <div className="flex items-center">
+            <img
+              src={logo}
+              alt="neweb.ai"
+              className="h-8 w-auto sm:h-10 md:h-[80px] lg:h-[80px]"
+            />
           </div>
 
           {/* Desktop Navigation */}

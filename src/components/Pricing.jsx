@@ -1,60 +1,60 @@
-import React from 'react';
-import { Check, Star, Globe, Loader2 } from 'lucide-react';
-import { useGeoCurrency } from '../hooks/useGeoCurrency';
-import CurrencySelector from './CurrencySelector';
+import { Check, Star, Globe, Loader2 } from "lucide-react";
+import { useGeoCurrency } from "../hooks/useGeoCurrency";
+import CurrencySelector from "./CurrencySelector";
 
 const Pricing = () => {
-  const { currency, loading, pricing, countryName, setCurrency } = useGeoCurrency();
+  const { currency, loading, pricing, countryName, setCurrency } =
+    useGeoCurrency();
 
   const plans = [
     {
-      name: 'Starter',
+      name: "Starter",
       price: pricing.plans.starter,
-      description: 'Perfect for individuals and small projects',
+      description: "Perfect for individuals and small projects",
       features: [
-        'Up to 5 projects',
-        'Basic AI code generation',
-        'Community support',
-        'Standard templates',
-        '5GB storage',
-        'Basic analytics',
+        "Up to 5 projects",
+        "Basic AI code generation",
+        "Community support",
+        "Standard templates",
+        "5GB storage",
+        "Basic analytics",
       ],
-      buttonText: 'Start Free Trial',
+      buttonText: "Start Free Trial",
       popular: false,
     },
     {
-      name: 'Professional',
+      name: "Professional",
       price: pricing.plans.professional,
-      description: 'Ideal for growing teams and businesses',
+      description: "Ideal for growing teams and businesses",
       features: [
-        'Up to 25 projects',
-        'Advanced AI features',
-        'Priority support',
-        'Premium templates',
-        '50GB storage',
-        'Advanced analytics',
-        'Custom integrations',
-        'Team collaboration',
+        "Up to 25 projects",
+        "Advanced AI features",
+        "Priority support",
+        "Premium templates",
+        "50GB storage",
+        "Advanced analytics",
+        "Custom integrations",
+        "Team collaboration",
       ],
-      buttonText: 'Start Free Trial',
+      buttonText: "Start Free Trial",
       popular: true,
     },
     {
-      name: 'Enterprise',
+      name: "Enterprise",
       price: pricing.plans.enterprise,
-      description: 'For large organizations and agencies',
+      description: "For large organizations and agencies",
       features: [
-        'Unlimited projects',
-        'Full AI capabilities',
-        '24/7 dedicated support',
-        'Custom templates',
-        'Unlimited storage',
-        'Real-time analytics',
-        'White-label options',
-        'Advanced security',
-        'Custom training',
+        "Unlimited projects",
+        "Full AI capabilities",
+        "24/7 dedicated support",
+        "Custom templates",
+        "Unlimited storage",
+        "Real-time analytics",
+        "White-label options",
+        "Advanced security",
+        "Custom training",
       ],
-      buttonText: 'Contact Sales',
+      buttonText: "Contact Sales",
       popular: false,
     },
   ];
@@ -67,9 +67,10 @@ const Pricing = () => {
             Simple and Transparent Pricing
           </h2>
           <p className="max-w-3xl mx-auto mb-6 text-xl text-gray-600">
-            Choose the perfect plan for your needs. All plans include our core AI features and can be upgraded anytime.
+            Choose the perfect plan for your needs. All plans include our core
+            AI features and can be upgraded anytime.
           </p>
-          
+
           {/* Currency Detection Status */}
           <div className="flex items-center justify-center mt-6 space-x-4">
             <div className="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-700 rounded-full bg-blue-50">
@@ -81,11 +82,12 @@ const Pricing = () => {
               ) : (
                 <>
                   <Globe className="w-4 h-4 mr-2" />
-                  Prices shown in {currency} {countryName && `for ${countryName}`}
+                  Prices shown in {currency}{" "}
+                  {countryName && `for ${countryName}`}
                 </>
               )}
             </div>
-            
+
             {!loading && (
               <CurrencySelector
                 currentCurrency={currency}
@@ -93,7 +95,6 @@ const Pricing = () => {
               />
             )}
           </div>
-          
         </div>
 
         <div className="grid max-w-5xl gap-8 mx-auto md:grid-cols-3">
@@ -102,8 +103,8 @@ const Pricing = () => {
               key={plan.name}
               className={`relative bg-white rounded-2xl border-2 p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
                 plan.popular
-                  ? 'border-blue-500 shadow-xl scale-105'
-                  : 'border-gray-200 hover:border-blue-300'
+                  ? "border-blue-500 shadow-xl scale-105"
+                  : "border-gray-200 hover:border-blue-300"
               }`}
             >
               {plan.popular && (
@@ -116,7 +117,9 @@ const Pricing = () => {
               )}
 
               <div className="mb-8 text-center">
-                <h3 className="mb-2 text-2xl font-bold text-gray-900">{plan.name}</h3>
+                <h3 className="mb-2 text-2xl font-bold text-gray-900">
+                  {plan.name}
+                </h3>
                 <p className="mb-6 text-gray-600">{plan.description}</p>
                 <div className="mb-4">
                   {loading ? (
@@ -127,7 +130,8 @@ const Pricing = () => {
                   ) : (
                     <>
                       <span className="text-5xl font-bold text-gray-900">
-                        {pricing.symbol}{plan.price.toLocaleString()}
+                        {pricing.symbol}
+                        {plan.price.toLocaleString()}
                       </span>
                       <span className="text-gray-600">/month</span>
                     </>
@@ -147,8 +151,8 @@ const Pricing = () => {
               <button
                 className={`w-full py-4 px-6 rounded-lg font-semibold transition-all duration-200 ${
                   plan.popular
-                    ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5'
-                    : 'bg-gray-900 text-white hover:bg-gray-800'
+                    ? "bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    : "bg-gray-900 text-white hover:bg-gray-800"
                 }`}
               >
                 {plan.buttonText}

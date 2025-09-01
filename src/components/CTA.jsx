@@ -1,9 +1,8 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle, Sparkles } from "lucide-react";
 
 const CTA = () => {
   return (
     <section className="relative py-20 overflow-hidden text-white bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
-      {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 bg-blue-400 rounded-full w-96 h-96 mix-blend-multiply filter blur-xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 bg-purple-400 rounded-full w-96 h-96 mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
@@ -16,7 +15,9 @@ const CTA = () => {
             Get Started with neweb.ai Today
           </h2>
           <p className="max-w-2xl mx-auto text-xl leading-relaxed text-gray-300">
-            Join thousands of developers who are already building faster, smarter websites with our AI-powered platform. Start your free trial now and experience the future of web development.
+            Join thousands of developers who are already building faster,
+            smarter websites with our AI-powered platform. Start your free trial
+            now and experience the future of web development.
           </p>
         </div>
 
@@ -32,15 +33,15 @@ const CTA = () => {
 
         <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-400">
           <div className="flex items-center">
-            <div className="w-2 h-2 mr-2 bg-green-400 rounded-full"></div>
-            14-day free trial
+            <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
+            Free 14-day trial
           </div>
           <div className="flex items-center">
-            <div className="w-2 h-2 mr-2 bg-green-400 rounded-full"></div>
+            <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
             No credit card required
           </div>
           <div className="flex items-center">
-            <div className="w-2 h-2 mr-2 bg-green-400 rounded-full"></div>
+            <CheckCircle className="w-4 h-4 mr-2 text-green-400" />
             Cancel anytime
           </div>
         </div>

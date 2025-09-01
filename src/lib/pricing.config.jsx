@@ -1,7 +1,7 @@
 export const pricingConfig = {
   USD: {
-    currency: 'USD',
-    symbol: '$',
+    currency: "USD",
+    symbol: "$",
     plans: {
       starter: 15,
       professional: 49,
@@ -9,8 +9,8 @@ export const pricingConfig = {
     },
   },
   GBP: {
-    currency: 'GBP',
-    symbol: '£',
+    currency: "GBP",
+    symbol: "£",
     plans: {
       starter: 12,
       professional: 39,
@@ -18,8 +18,8 @@ export const pricingConfig = {
     },
   },
   INR: {
-    currency: 'INR',
-    symbol: '₹',
+    currency: "INR",
+    symbol: "₹",
     plans: {
       starter: 1249,
       professional: 4099,
@@ -30,14 +30,14 @@ export const pricingConfig = {
 
 export const getCurrencyByCountry = (countryCode) => {
   const cc = countryCode.toUpperCase();
-  
-  if (['IN', 'PK', 'BD', 'NP'].includes(cc)) {
-    return 'INR';
-  } else if (['GB', 'UK'].includes(cc)) {
-    return 'GBP';
+
+  if (["IN", "PK", "BD", "NP"].includes(cc)) {
+    return "INR";
+  } else if (["GB", "UK"].includes(cc)) {
+    return "GBP";
   }
-  
-  return 'USD';
+
+  return "USD";
 };
 
 export const formatPrice = (amount, currency) => {
