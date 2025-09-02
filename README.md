@@ -118,7 +118,7 @@ npm run lint
 
 ```
 src/
-├── components/          # React components
+├── components/         # React components
 │   ├── Navbar.tsx      # Navigation header
 │   ├── Hero.tsx        # Hero section with CTA
 │   ├── TrustBar.tsx    # Company logos
@@ -252,16 +252,8 @@ Ready for analytics integration:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
-## 🆘 Support
-
-For support and questions:
-
-- Create an issue in the GitHub repository
-- Contact: support@neweb.ai
 
 ---
 
