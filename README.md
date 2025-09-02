@@ -119,25 +119,25 @@ npm run lint
 ```
 src/
 ├── components/         # React components
-│   ├── Navbar.tsx      # Navigation header
-│   ├── Hero.tsx        # Hero section with CTA
-│   ├── TrustBar.tsx    # Company logos
-│   ├── Features.tsx    # Feature showcase
-│   ├── Advantage.tsx   # Why choose us
-│   ├── Pricing.tsx     # Pricing plans
-│   ├── Testimonials.tsx # Customer reviews
-│   ├── FAQ.tsx         # Frequently asked questions
-│   ├── Blog.tsx        # Blog preview
-│   ├── CTA.tsx         # Call to action
-│   ├── Footer.tsx      # Site footer
-│   └── CurrencySelector.tsx # Currency selection
+│   ├── Navbar.jsx      # Navigation header
+│   ├── Hero.jsx        # Hero section with CTA
+│   ├── TrustBar.jsx    # Company logos
+│   ├── Features.jsx    # Feature showcase
+│   ├── Advantage.jsx   # Why choose us
+│   ├── Pricing.jsx     # Pricing plans
+│   ├── Testimonials.jsx # Customer reviews
+│   ├── FAQ.jsx         # Frequently asked questions
+│   ├── Blog.jsx        # Blog preview
+│   ├── CTA.jsx         # Call to action
+│   ├── Footer.jsx      # Site footer
+│   └── CurrencySelector.jsx # Currency selection
 ├── hooks/              # Custom React hooks
-│   └── useGeoCurrency.ts # Geo-location and currency
+│   └── useGeoCurrency.js # Geo-location and currency
 ├── lib/                # Utility libraries
-│   └── pricing.config.ts # Pricing configuration
+│   └── pricing.config.js # Pricing configuration
 ├── assets/             # Static assets and documentation
-├── App.tsx             # Main application component
-├── main.tsx            # Application entry point
+├── App.jsx             # Main application component
+├── main.jsx            # Application entry point
 └── index.css           # Global styles
 ```
 
@@ -167,7 +167,7 @@ src/
 
 ### Pricing Configuration
 
-Update pricing in `src/lib/pricing.config.ts`:
+Update pricing in `src/lib/pricing.config.js`:
 
 ```Javascript
 export const pricingConfig = {
@@ -221,7 +221,7 @@ Update colors in `tailwind.config.js` or use CSS custom properties.
 ### Content
 
 - Update company information in components
-- Modify pricing plans in `pricing.config.ts`
+- Modify pricing plans in `pricing.config.js`
 - Replace testimonials and blog posts with real content
 
 ### Images
